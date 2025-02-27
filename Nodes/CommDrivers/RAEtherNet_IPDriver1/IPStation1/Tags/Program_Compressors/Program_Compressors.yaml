@@ -1,0 +1,13 @@
+Name: 'Program:Compressors'
+Type: FolderType
+Children:
+- Name: GEA_Omni_Anunciations
+  Type: RAEtherNetIPTag
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [50]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Compressors.GEA_Omni_Anunciations"
