@@ -118,7 +118,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 15.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -77607,6 +77607,11 @@ Children:
     ModellingRule: Optional
     Value: -1.0
   - Name: RightMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: -1.0
+  - Name: TopMargin
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
