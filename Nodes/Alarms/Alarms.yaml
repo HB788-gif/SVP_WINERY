@@ -1005,6 +1005,11 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"'High Discharge Temperature'"}
+  - Name: Enabled
+    Id: g=5a9117159b19b7ae64dae6c4b70eece3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: DigitalAlarm16
   Id: g=c2495cc9910db8ae3100c67ed3d9dfae
   Type: OffNormalAlarmController
@@ -2229,3 +2234,139 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"compressors 'General Fault'"}
+- Name: DigitalAlarm34
+  Id: g=87cda5171ba1d48ef7e8914b2d59d3ba
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=8a8da28210995b70c039f0d28a7761cc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6af351eb0b54c193a1cc1c4b1134046d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=dea515049c60ccb1b78fe8868e5d4df7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].25"
+      Children:
+      - Name: Mode
+        Id: g=c02c92f2ebf7f6191f6eee8d463b9619
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=f2090989be5e5b806ed031bd9091e571
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=9d6dba157e46277c44476f94c203436b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor #1 Failure"}
+- Name: DigitalAlarm35
+  Id: g=94dd6f0d546052cf70188555a7634cb3
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=6d5a5e43d0b0e9f3a788c1962c72eeed
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=61db1a8b898a763d67e5b226ac6c8874
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=50223f5822dc7c7bf94b4c3a3c414552
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].26"
+      Children:
+      - Name: Mode
+        Id: g=f001aff79ccbd1de77378e11dde93137
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=51a150e124f90467a13cb4356a4c4af2
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b2592576f0c9d58fabf89df9951bcd3b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor #2 Failure"}
