@@ -8593,6 +8593,214 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "CMP[4].LocalPB"
+  - Name: AlarmCode
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AlarmCode"
+  - Name: GEA_Anunciations
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "GEA_Anunciations"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
+  - Name: Cap_Control
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cap_Control"
+  - Name: Start_Timer
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start_Timer"
+  - Name: SVC_Position
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SVC_Position"
+  - Name: AMPS
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AMPS"
+  - Name: SuctPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SuctPSI"
+  - Name: DisPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DisPSI"
+  - Name: OilInletPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OilInletPSI"
+  - Name: FiltDbPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FiltDbPSI"
+  - Name: OilDbPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OilDbPSI"
+  - Name: FiltPSI
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FiltPSI"
+  - Name: SuctTemp
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SuctTemp"
+  - Name: DischTemp
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DischTemp"
+  - Name: OilSepTemp
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OilSepTemp"
+  - Name: OilInTemp
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OilInTemp"
+  - Name: ons
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ons"
+  - Name: Remote
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Remote"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start"
+  - Name: Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Stop"
+  - Name: Load
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Load"
+  - Name: Unload
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Unload"
+  - Name: RemotePB
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "RemotePB"
+  - Name: AutoPB
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AutoPB"
+  - Name: LocalPB
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LocalPB"
 - Name: MAIN_MSR_ALARM
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -12275,6 +12483,9 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "ALARM"
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
 - Name: Current
   Type: RAEtherNetIPTag
   DataType: String
@@ -12299,3 +12510,115 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HB_TEST"
+- Name: EMERGENCY_PB_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../EMERGENCY_PB_ALARM"
+- Name: GLYCOL_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../GLYCOL_ALARM"
+- Name: AMMONIA_HIGHT_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../AMMONIA_HIGHT_ALARM"
+- Name: AMMONIA_LOW_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../AMMONIA_LOW_ALARM"
+- Name: MAIN_MSR_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../MAIN_MSR_ALARM"
+- Name: SUCTION_HIGHT_WARNINGTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../SUCTION_HIGHT_WARNING"
+- Name: SUCTION_LOW_WARNINGTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../SUCTION_LOW_WARNING"
+- Name: DISCHARGE_HIGHT_ALARMTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../DISCHARGE_HIGHT_ALARM"

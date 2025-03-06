@@ -23,6 +23,10 @@ Project:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
    Version: 6.5
+  5:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 2.1
   6:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -79,27 +83,23 @@ Project:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
    Version: 1.2
+  21:
+   Uri: 'urn:FTOptix:NativeUI:Net'
+   Module: FTOptix.NativeUI.Net
+   Version: 1.0
   22:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
-  23:
-   Uri: 'urn:FTOptix:NativeUI'
-   Module: FTOptix.NativeUI
-   Version: 2.1
-  24:
-   Uri: 'urn:FTOptix:NativeUI:Net'
-   Module: FTOptix.NativeUI.Net
-   Version: 1.0
  Statistics:
-  TotalNodeCount: 26087
-  Objects: 3126
+  TotalNodeCount: 26433
+  Objects: 3173
   ObjectTypes: 13
-  Variables: 22900
+  Variables: 23198
   VariableTypes: 24
   DataTypes: 24
-  Methods: 0
-  References: 386
+  Methods: 1
+  References: 408
   ReferenceTypes: 0
   Files: 31
  Nodes:
