@@ -4,7 +4,7 @@ Children:
 - Name: Phone Receiver
   Type: BaseDataVariableType
   DataType: String
-  Value: "8055919565@vtext.com;7864912979@tmomail.net"
+  Value: "8055919565@vtext.com"
 - Name: Email Body
   Type: BaseDataVariableType
   DataType: String
