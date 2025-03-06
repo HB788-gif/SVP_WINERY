@@ -293,11 +293,10 @@ Children:
   - Name: Protocol
     Type: BaseDataVariableType
     DataType: Protocol
-    Value: 1
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "127.0.0.1"
+    Value: "0.0.0.0"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16
@@ -424,6 +423,11 @@ Children:
   - Name: Hostname
     Type: BaseDataVariableType
     DataType: String
+  - Name: AllowedRemoteSources
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
