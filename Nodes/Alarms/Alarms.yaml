@@ -2183,7 +2183,7 @@ Children:
       Id: g=85ff46c554c8b1efb305e995c124e4fa
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].24"
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].25"
       Children:
       - Name: Mode
         Id: g=a9dcbe032ce69fe56a41eb8d6326ec84
@@ -2233,33 +2233,33 @@ Children:
     Id: g=cb6a7e5ca700bc7681cf3c87e22bdf83
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"compressors 'General Fault'"}
-- Name: DigitalAlarm34
-  Id: g=87cda5171ba1d48ef7e8914b2d59d3ba
+    Value: {"LocaleId":"en-US","Text":"compressor 1 'General Fault'"}
+- Name: DigitalAlarm36
+  Id: g=50b9ba89023ea93257e800bca0389347
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
-    Id: g=8a8da28210995b70c039f0d28a7761cc
+    Id: g=a0e34c9b2c5b4a549658a701a1790c55
     Type: BaseDataVariableType
     DataType: Double
   - Name: InputValue
-    Id: g=6af351eb0b54c193a1cc1c4b1134046d
+    Id: g=6f9de92a22cd54f6fa9914bb2cbfa496
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=dea515049c60ccb1b78fe8868e5d4df7
+      Id: g=46f8c66275ecb67359af408ef4024240
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].25"
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/S1_AMMONIA_ALARM"
       Children:
       - Name: Mode
-        Id: g=c02c92f2ebf7f6191f6eee8d463b9619
+        Id: g=c824487830e77019b9964889434d9c92
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=f2090989be5e5b806ed031bd9091e571
+    Id: g=6c0c1df041f411912cca7f8dd6c5604f
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -2298,36 +2298,376 @@ Children:
     Target: ns=19;i=154
     Direction: Forward
   - Name: Message
-    Id: g=9d6dba157e46277c44476f94c203436b
+    Id: g=3eb599aff185f11e7f0207c3c2a9be6f
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Compressor #1 Failure"}
-- Name: DigitalAlarm35
-  Id: g=94dd6f0d546052cf70188555a7634cb3
+    Value: {"LocaleId":"en-US","Text":"Sensor 1 Air ammonia alarm"}
+- Name: DigitalAlarm37
+  Id: g=bd164567ea2be9c9e8e449035683a5fc
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
-    Id: g=6d5a5e43d0b0e9f3a788c1962c72eeed
+    Id: g=addc24e8f302c35c89524ed6b6f308f0
     Type: BaseDataVariableType
     DataType: Double
   - Name: InputValue
-    Id: g=61db1a8b898a763d67e5b226ac6c8874
+    Id: g=3f9ca5d6255ed646bbe971e9488e93c6
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=50223f5822dc7c7bf94b4c3a3c414552
+      Id: g=b97558727a5bf5de63ec7191ce2b82bc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/S2_AMMONIA_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=3e756f3ce747eacb7795a75ab2e06717
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=88e4cd099e9225ffc7f3ce67819e35ce
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=8b10e4f0c3b37fcebdbb8b74abfc43c6
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Sensor 2 Air ammonia alarm"}
+- Name: DigitalAlarm38
+  Id: g=91404075d2b46d978aea5e298ea44963
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=7e9595b2f0754b25cf3657ea1b8854fc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c00625e8dfb2e6a672df7a8e4a5cd56f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=489c6d5c2495e23b4b998d60c6f2b95d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/SUCTION_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=482bb6a779995c54334b2573318cdb4b
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=b7244f1f2ba06a67d6ebbd638efbcbab
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=334cd50155cf2d3eeb9a6cd0aed5ffa5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Suction pressure  Alarm"}
+- Name: DigitalAlarm39
+  Id: g=1e372afb66e92d05683e85732e588252
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=d0cd7e0ee8b27c59a779717adf6a8553
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=90ab9eaa5b67ff346745317204c44406
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=15ae6f9052fcc18dd65fa57f31456db2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/DISCHARGE_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=6806b8788104a37e3f3fccfbcd464765
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=c5a266451f9af87ac508eaaa037a369a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=48e89e0634c79097294b013353a0cce3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"discharge pressure  Alarm"}
+- Name: DigitalAlarm40
+  Id: g=0bfe82028f442f0706fa2684e88db837
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e94fc61ddadeac6bbe57f261582ab905
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=3416e15e0e5d1097fac40864154975e9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d1116a7d547268c5c4bac7c28a7c42c2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/INLET_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=058124c1e2205bf2d39ceb419df57edb
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8f6fae3f478ce2ab9e22ecc7b66a4001
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=d709d3e96066ddc1bbc5960e11ac9835
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Glycol Inlet temperature  Alarm"}
+- Name: DigitalAlarm41
+  Id: g=42a0f38f12f792d5a77c6d5ca78129c2
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=18352aeb84bb40b7494dfd12191679ba
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d780f818a5e945b5f37abdb0760b3d8a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f4372d9102f87a379223bd89cd0ec154
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/OUTLET_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=fd21e40f0ac43ef8b4d38c92992e4ff0
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7006331450c0c18398d6d7b8fb0012b9
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=1b07602bd6253b5e9d04a1f27a74e6a8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Glycol Outlet temperature  Alarm"}
+- Name: DigitalAlarm42
+  Id: g=a0d712fcba54887961a703c841f8a33a
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=3ee2e78673c0cc62e69e53b8554630ab
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2e49152458823ff7ba8b5501c1149628
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7fd48b0b125c4305af9392afc5f5f859
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].26"
       Children:
       - Name: Mode
-        Id: g=f001aff79ccbd1de77378e11dde93137
+        Id: g=a94f18ec9c7bd104a71c8b064b7eed41
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=51a150e124f90467a13cb4356a4c4af2
+    Id: g=15cebe106f06571b621db0a66abc75f7
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -2366,7 +2706,1571 @@ Children:
     Target: ns=19;i=154
     Direction: Forward
   - Name: Message
-    Id: g=b2592576f0c9d58fabf89df9951bcd3b
+    Id: g=d1ebc3716099aa5ac8b3cb9ae77c39fe
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Compressor #2 Failure"}
+    Value: {"LocaleId":"en-US","Text":"compressor 2 General Fault'"}
+- Name: DigitalAlarm43
+  Id: g=ad1a2e6221d2a698116fbe719c4a082d
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e894b8609d50cc16178aae17a5461d13
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=10c02b135052160e8af4350ed2aae3eb
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=75cf5c602824bacce720889b935fb664
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].0"
+      Children:
+      - Name: Mode
+        Id: g=8f975088773619710333acb8b5f32e88
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9b5ce895a5aa84d411f2b93806162714
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=3c4b7fd4468f17706a4e660c29f3682e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2# 'High Motor Current'"}
+- Name: DigitalAlarm44
+  Id: g=1681ce3a5dce2d4d7a32c3f9011fe517
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=a76b9179da048515d0b94cba4c4e3ed3
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=14ea205aa56e1ff274dcfa4016ab9c05
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7378a3d85bee1dfece3af2ffbaf76c0c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].1"
+      Children:
+      - Name: Mode
+        Id: g=8044b46ee547c8b789fa015f9c31dad9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=4afb4610945a3a3a09f3778de8f4e5c0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=4ea6b7638c57c2e17f49dc8cdc1e797e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Suction Pressure'"}
+- Name: DigitalAlarm45
+  Id: g=638a5f47f22a3734cce90900b7ece2f6
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=44033c4cfafb35507fa91a839fff7295
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=58d342aa7cf3e7d1eb712adb466b64a3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=15f06786539b6e3f5fae53acecf6901f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].2"
+      Children:
+      - Name: Mode
+        Id: g=50f77be1ea84a39413a74026687d1e75
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=5d8321e38dc801c975c8803e97d9fbb0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=96c0416fe946ac2572fe23738ac292e7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"compressor 2 low suction pressure"}
+- Name: DigitalAlarm46
+  Id: g=48adde6029cdfd8b1fe91b5231186f2d
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=510fa392c990df09487af293becc4c5b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9348d1db8ec26796cb4b8cd9cf0a5362
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2a44760b74b42dca0f41079be21d6f1f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].3"
+      Children:
+      - Name: Mode
+        Id: g=e07f6ca5914ec8cf2bffa7de9890d37f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=26d25ee6bc0885429db5fd2e0d46f60a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=41bcce83b350eb29dab41f55d5f73313
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Capacity Slide Fail to Unload'"}
+- Name: DigitalAlarm47
+  Id: g=9e34123307c8fff14861405f8c20d47b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=1317eacfd72ce82f37efc32e46af8424
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=c0fa57785ec1ef259184a5d4a2d02e26
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=60dc69a36df5cf2b2cbd6ca29a3990ab
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].5"
+      Children:
+      - Name: Mode
+        Id: g=54f7d447c4fcede2e49972c3af10a121
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=f0d6c7e791053e7bb85b943071752d6f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=a11356e506174f339e59fe2336a7675a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Discharge Pressure'"}
+- Name: DigitalAlarm48
+  Id: g=a2fd027eb939ae4d0bafd5157fcd8418
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=0df823524e6c6ddb5f3a8a6704e24fc7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=7ac14aeabfb012a59970c0f5d96a73cd
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d894544ac86ff167574f28895a67e546
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].6"
+      Children:
+      - Name: Mode
+        Id: g=148f5e38236ddbb8984e5784932e7232
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=59d56b173a1b5a73bdfa5e776a5f3350
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=7586636a74eb948e66289d16fc1841f9
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Discharge Temperature'"}
+- Name: DigitalAlarm49
+  Id: g=ab58935dd9c4109caa08b3d3de13cb35
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ac8bc1d067fdef5725ca888a9b841f7f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=e6f493b3c194d1f68dd6fa94048bfeef
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b3e49d390e5fe714284b4177b5c7f69e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].7"
+      Children:
+      - Name: Mode
+        Id: g=778133453aeabea3b25841ed17a807ea
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=f39c28c0479115cfdf34917ef28d704c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=5e4c235c5ed2e118a97a11d9556d7245
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Oil Separator Temperature'"}
+- Name: DigitalAlarm50
+  Id: g=0bf643a77cc9d5c2d0cbad00aa1a213e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=284c1d31068ac9101baf387d87c5c1ee
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=eaa06d2509ec53486c5c11d46b0639e3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=d1803a2e4a08194c7b69506e83a59f25
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].8"
+      Children:
+      - Name: Mode
+        Id: g=222eda18171ff67ab4dd8bde96f541d7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=6eb2d1e0d175349a10c0a7667f3d9055
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=79af1ce7b4fcfe1b0266bf110655a508
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Oil Separator Temperature'"}
+- Name: DigitalAlarm51
+  Id: g=1a9fcc37764cf0133d228925556bc1ee
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=201ef77de7103309c219993b36b36900
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=58506b415a6fba1cb3b3d1f75c9c7d41
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c4072a192c62798be10b099458757a51
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].9"
+      Children:
+      - Name: Mode
+        Id: g=56ecb0c8149f501c044bea974509e566
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3618b0edc5c5f5ff96cf4d47c538b24a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=172166de9e30779d4c2bd9e0154d1a67
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Oil Separator Level'"}
+- Name: DigitalAlarm52
+  Id: g=0a1d1815bb3ae1626cff6e46fa263ba3
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=28ad8ef823a0cbbb7eec898b205600b6
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=013791e6ba2123cf329d56a7e7557354
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2fae7b0ade0d94d4c1f80390ccc74e6e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].10"
+      Children:
+      - Name: Mode
+        Id: g=2f5417bf65a09ace430253d2ed0b9b64
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=eae4e3dcbb98d08b5fb513ebeb6ba9ef
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=9767ddce641a53c72aa7cd1ce44133c0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Oil Level'"}
+- Name: DigitalAlarm53
+  Id: g=5a67086c255742f8283b27bddfc64252
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=e0af4fe5be5c4bc4dc7c731a2fe54660
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4fc4be49db2e0116f3e6bab4e4960cf7
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=c6cfefba5cf5eab7a1edc2e4581ab10f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].11"
+      Children:
+      - Name: Mode
+        Id: g=0c38279a3cd400e6c1022eacda92054b
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=dea4dc8271826bf052427b7536891815
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=243ca0f02739519b0ef619deeeff1c7c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Inlet Oil Temperature'"}
+- Name: DigitalAlarm54
+  Id: g=e0527be07d9160f768c40b0557c91664
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=b1e261b5ee717d09b9221f9af4cef953
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5dd62070b22e5c9401bf61c6aa3f405a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=997ccd439fc89e32244aabc3f1e0ec1a
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].12"
+      Children:
+      - Name: Mode
+        Id: g=be11be52f56f916a60145038c5888419
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=29de2c2eeecaf9b693520f28f7dc2d7a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=bae124c19bcb2cc9fbabef94686ffa5e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Inlet Oil Temperature'"}
+- Name: DigitalAlarm55
+  Id: g=1fa63595287697760d3a3124a93789b7
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=661ad4428b6ac18bd5ed15f50d4c5e16
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5bf07f7e45ab7276fcee755f93d44166
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=798cd1809f230254f5a0c9448b21f7a1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].13"
+      Children:
+      - Name: Mode
+        Id: g=01484006ee70e066e415fef1c24079f8
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=adbfc75152fc8c0793f7b1385a1ae8c4
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=f33df437db1b3d000fc0ffaa674d78fe
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Oil Differential Pressure"}
+- Name: DigitalAlarm56
+  Id: g=4c9f4ccb73cc7b027992671488d078f7
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ac9ca82cae17452d88a17ef8570e05b3
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a16b99930f336c003ba926dc6180c15e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=05b517daf259e112609e52ab0ac76f99
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].14"
+      Children:
+      - Name: Mode
+        Id: g=f706c5ec069c789d86624827e4a96da6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=85c5f1d09410b22f1081b9b089ac248b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=f08964771a97df4cf3c11e59787bcb1e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Oil Differential Pressure'"}
+- Name: DigitalAlarm57
+  Id: g=cbd03be763c05f43ec48ba29ba7c9707
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=b23a1e479217a2014befff8827d700fe
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d7781f5f64507b7de7a1401aafd3da5e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ccd4d27c5d2e67fb03fe8ce331c3ece7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].15"
+      Children:
+      - Name: Mode
+        Id: g=6ba03f836efdf101637cd5b392b5832c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=93ed13d46b2d7660aeab107714442fa5
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=1316ef959b47da2b029d824ece568784
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Oil Filter Differential Pressure'"}
+- Name: DigitalAlarm58
+  Id: g=b83cb1f3f636b399d32c4eacb9a58be6
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=7fc635ae23a12071b8be3c8fc3070b59
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b2804e8ad09346e63ed44caad4453839
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e3145bc5712947233b5051a846a80ac7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].16"
+      Children:
+      - Name: Mode
+        Id: g=a362e3b8211add97522d9c5f416a7ff3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=e05c28b253dc4d5755a757925441c35a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=316907b72f15225181a716861aa7bf72
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Gas Leak Detection Shutdown'"}
+- Name: DigitalAlarm59
+  Id: g=34d13e69817d6ea42fa43c4ef8c0bd6e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=dbeba6d5967f147d4a6fab180a4cbe03
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=73bf4ef784c638a68e7f6d8a83bef5c9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=2166acd6faa94871e0e4c01c4930bf33
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].17"
+      Children:
+      - Name: Mode
+        Id: g=ed57f3c28e92256e9406acb3c4a4cfdc
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=15eb122218e6df722e00967e6d1f62fb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=b59864fd1071c7b8c32d1e5a665939eb
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Oil Pump Circulation Shutdown'"}
+- Name: DigitalAlarm60
+  Id: g=f3f17343324446de61ac1a06dbbb10dd
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=190788b979b4910214804d05ff08358d
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=074511c59d678f2b6cdcec3e1d688556
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=bd3c10a0c5826814ad595f5b63f5e414
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].18"
+      Children:
+      - Name: Mode
+        Id: g=3102e43119929c3563c5f3368a87f725
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3c423999faec33fdccaa9194dd4dd72f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=06f08809327226c9bc21461c7bb088b2
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Suction Superheat Shutdown'"}
+- Name: DigitalAlarm61
+  Id: g=dd208aa7083be5dd4ec0f51b3d57488e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=7156f8a69140a6b26f6973e6c03a3cc6
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6949a46aa7411c1d41548c89a033c8f8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=a22268463be6dac12942fe1ef71bf8a1
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].19"
+      Children:
+      - Name: Mode
+        Id: g=a7d8e983a65e16b5caf332a52e60b74a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=dc949ecd583859e7377229a10c96ccb3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=7beb068f5f6dd3afb5ecf1184c751e83
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Suction Superheat Shutdown'"}
+- Name: DigitalAlarm62
+  Id: g=bcd13893b6374804f1381eabbb592065
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=f686c7551899be498c7a500036ce132c
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2f9582cb14550e5e096e3b60291cedbc
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=3eef1960d80b6d26e6b90ec755d5b8cf
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].20"
+      Children:
+      - Name: Mode
+        Id: g=f7a80b5fdced019fb5a97182402af32f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=bee2d98af89156f9c96e0d7c0609fbcf
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=194fcbae275e1a9c78932faab36f3864
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Discharge Superheat Shutdown'"}
+- Name: DigitalAlarm63
+  Id: g=bbd77faca9b6c7d9188ed139586d14d4
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=08c5e59be963094d0839c08be22cb884
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a13b06d26408bf9b406c42ea4f00ec13
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=85519e655b3dbbd20b04a0bfc4ed6dcd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].21"
+      Children:
+      - Name: Mode
+        Id: g=aa50c679a6ca4f03d670d7f97a90694d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=5dac6b41e66adad6469819fb78acb4c7
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=725876e23912288d2c2c5e81429877d3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Discharge Superheat Shutdown'"}
+- Name: DigitalAlarm64
+  Id: g=9e2d38df695f69bf9061e95341e87c33
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ab38b834e46f669d0c882fbf4377da9b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6eec4eebe19977d2494d91207a6d67d4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=09154e9c1a015e1778202aa521543dfc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].22"
+      Children:
+      - Name: Mode
+        Id: g=58ec0fb89292676eae3a93d41f367f39
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=956443dc73b4146bd099f47e18d12ad0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=569f7dc7203e2d0f9be56d6a07c78b2f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2  'Low Intermediate Pressure'"}
+- Name: DigitalAlarm65
+  Id: g=912add2f3859289130246416ef7a6d9b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=b5d675b4f2d2334a82f1a82181a71116
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=761c03126c950533c8b439d7f0979bb2
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e0dd226e12340729e7bd30d92ee96e8f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM1[0].23"
+      Children:
+      - Name: Mode
+        Id: g=f39a0ed18b7b94cf8a30a9abd7dd1807
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3d041291b9d9b6065bb7579102351c90
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=526c7a961e219ac070eaaa8803b03a22
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Inlet Temperature'"}
