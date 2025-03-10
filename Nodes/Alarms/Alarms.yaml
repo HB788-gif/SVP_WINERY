@@ -137,7 +137,7 @@ Children:
     Id: g=ca933a77350472c81dfc8fb2437ac658
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Bad Flow in glycol sytem"}
+    Value: {"LocaleId":"en-US","Text":"Glycol Bad Flow Alarm"}
 - Name: DigitalAlarm3
   Id: g=bee1b522db39161a0b7169e7667bcb1f
   Type: OffNormalAlarmController
@@ -409,7 +409,7 @@ Children:
     Id: g=a076504f6d99ebc2c3234789a53ee04c
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"SUCTION HIGHT WARNING"}
+    Value: {"LocaleId":"en-US","Text":"Suction High Warning"}
 - Name: DigitalAlarm7
   Id: g=99131fb722fb82397680aea35ba65101
   Type: OffNormalAlarmController
@@ -422,6 +422,18 @@ Children:
     Id: g=f82d87cb388c7ac4b61d811ed6007b30
     Type: BaseDataVariableType
     DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b4584d7956e3dfdc7d5cdc11a11a3cbe
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/GLYCOL_LEVEL_ALARM"
+      Children:
+      - Name: Mode
+        Id: g=617a67d8abe12d2cd6f3571b5fea44b3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Id: g=59c669e250cf5edd7f390ef72e466f5f
     Type: BaseDataVariableType
@@ -461,6 +473,11 @@ Children:
   - Class: Reference
     Target: ns=19;i=154
     Direction: Forward
+  - Name: Message
+    Id: g=96738640295a89ac3ec64de8bd4ae802
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Glycol Bad Level Alarm"}
 - Name: DigitalAlarm8
   Id: g=6480a20c968e8412148303e7582e713d
   Type: OffNormalAlarmController
@@ -528,7 +545,7 @@ Children:
     Id: g=998c588a0d4c8218026a006d29134f25
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"SUCTION_LOW_WARNING"}
+    Value: {"LocaleId":"en-US","Text":"Suction Low Warning"}
 - Name: DigitalAlarm9
   Id: g=001a904c44c7917a5a9569209b118194
   Type: OffNormalAlarmController
@@ -596,7 +613,7 @@ Children:
     Id: g=0af36a9142126811fce9eb2162a69331
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"DISCHARGE_HIGHT_ALARM"}
+    Value: {"LocaleId":"en-US","Text":"Discharge High Alarm"}
 - Name: DigitalAlarm10
   Id: g=c0c66ebec212232550d4bd25f817b961
   Type: OffNormalAlarmController
@@ -2233,7 +2250,143 @@ Children:
     Id: g=cb6a7e5ca700bc7681cf3c87e22bdf83
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"compressor 1 'General Fault'"}
+    Value: {"LocaleId":"en-US","Text":"Compressor 1 'General Fault'"}
+- Name: DigitalAlarm34
+  Id: g=24cb62e7574443de6c72c255b9200831
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=054cd5e5e3b8dc28e1984a4ca494733b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5c21bbd2956b4160bfe5360b60b9c129
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=395fedc523f89bba13f50eab215ae6fc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/CONDENSER_FAN1_RUN_FAULT"
+      Children:
+      - Name: Mode
+        Id: g=16de9a7265bb44585be8f7bc9866e462
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=740bfee8f258ea2ee3cff864b78a7a6c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=92d6ad1cb4c9391bd3506815c4f905f3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Condenser Fan Fault"}
+- Name: DigitalAlarm35
+  Id: g=1c654fc4d79aff17a978b70975ad8f73
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=06a926b36a369edfe9bfed62eefb26d7
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=dea519166118c2ccb7eebefa6a214b8e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7a0fb3fe37db392b75752e4abd33fe4c
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/CONDENSER_PUMP_RUN_FAULT"
+      Children:
+      - Name: Mode
+        Id: g=06394a87feb11d34f968dcb5aced0b28
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d1f36b134c56ebe9dd26e1adac2ad502
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=508e0253a6298a8ab73b36525c1ae6ce
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Condenser Pump Fault"}
 - Name: DigitalAlarm36
   Id: g=50b9ba89023ea93257e800bca0389347
   Type: OffNormalAlarmController
@@ -2437,7 +2590,7 @@ Children:
     Id: g=334cd50155cf2d3eeb9a6cd0aed5ffa5
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Suction pressure  Alarm"}
+    Value: {"LocaleId":"en-US","Text":"Suction Pressure  Alarm"}
 - Name: DigitalAlarm39
   Id: g=1e372afb66e92d05683e85732e588252
   Type: OffNormalAlarmController
@@ -2505,7 +2658,7 @@ Children:
     Id: g=48e89e0634c79097294b013353a0cce3
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"discharge pressure  Alarm"}
+    Value: {"LocaleId":"en-US","Text":"Discharge Pressure  Alarm"}
 - Name: DigitalAlarm40
   Id: g=0bfe82028f442f0706fa2684e88db837
   Type: OffNormalAlarmController
@@ -2573,7 +2726,7 @@ Children:
     Id: g=d709d3e96066ddc1bbc5960e11ac9835
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Glycol Inlet temperature  Alarm"}
+    Value: {"LocaleId":"en-US","Text":"Glycol Inlet Temperature  Alarm"}
 - Name: DigitalAlarm41
   Id: g=42a0f38f12f792d5a77c6d5ca78129c2
   Type: OffNormalAlarmController
@@ -2641,7 +2794,7 @@ Children:
     Id: g=1b07602bd6253b5e9d04a1f27a74e6a8
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Glycol Outlet temperature  Alarm"}
+    Value: {"LocaleId":"en-US","Text":"Glycol Outlet Temperature  Alarm"}
 - Name: DigitalAlarm42
   Id: g=a0d712fcba54887961a703c841f8a33a
   Type: OffNormalAlarmController
@@ -2709,7 +2862,7 @@ Children:
     Id: g=d1ebc3716099aa5ac8b3cb9ae77c39fe
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"compressor 2 General Fault'"}
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 General Fault'"}
 - Name: DigitalAlarm43
   Id: g=ad1a2e6221d2a698116fbe719c4a082d
   Type: OffNormalAlarmController
@@ -2913,7 +3066,7 @@ Children:
     Id: g=96c0416fe946ac2572fe23738ac292e7
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"compressor 2 low suction pressure"}
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low suction pressure'"}
 - Name: DigitalAlarm46
   Id: g=48adde6029cdfd8b1fe91b5231186f2d
   Type: OffNormalAlarmController
@@ -3457,7 +3610,7 @@ Children:
     Id: g=243ca0f02739519b0ef619deeeff1c7c
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Compressor 2 'Low Inlet Oil Temperature'"}
+    Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Inlet Oil Temperature'"}
 - Name: DigitalAlarm54
   Id: g=e0527be07d9160f768c40b0557c91664
   Type: OffNormalAlarmController
@@ -4274,3 +4427,139 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"Compressor 2 'High Inlet Temperature'"}
+- Name: DigitalAlarm66
+  Id: g=cc077958050755933abbe8806531a5d0
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=5ed0e7a98876a40e341d42d51e9920b0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=967e49bb36b439680363f0300a1dd33b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0bb977c4e1459688029fb1af9b64b3e2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/EAST_PUMP_RUN_FAULT"
+      Children:
+      - Name: Mode
+        Id: g=39e5663c80352cbfae77776ff7a357c1
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=c1e6d6286070a1e8280d5326e8602e14
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=da9718dff9d91920a734135d8d9fccfd
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"East Pump Fault"}
+- Name: DigitalAlarm67
+  Id: g=e4d765194ffaaec14ef0d0abede9a170
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=f90d1d347d41a312d253e9c5b31d1a0b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=01591d4e0ca15d92b951a08a356707f1
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=60c0e4da9192d67d2431d76163b3574d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/WEST_PUMP_RUN_FAULT"
+      Children:
+      - Name: Mode
+        Id: g=8944e5ddb23d0e3eae0fae6aa4b0f9c0
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=f624f05f9feb4e7ea08ef66a540a3713
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=becfda7a61551bb397b2082f630573b0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"West Pump Fault"}

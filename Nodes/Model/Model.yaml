@@ -1,663 +1,7 @@
 Name: Model
 Type: ModelCategoryFolder
 Children:
-- Name: Phone Receiver
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "8055919565@vtext.com"
-- Name: Email Body
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "Check Compressors"
-- Name: Variable1Transitioned
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 10"
-- Name: Alarm 11
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].1"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 12
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].2"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 13
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].3"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 14
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].5"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 15
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].6"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 16
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].7"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 17
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].8"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 18
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].9"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 19
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].10"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 20
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].11"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 21
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].12"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 22
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].13"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 23
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].14"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 24
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].15"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 25
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].16"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 10
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].0"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 26
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].17"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 27
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].18"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 28
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].19"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 29
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].20"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 30
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].21"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 31
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].22"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 32
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].23"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Alarm 33
-  Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].24"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Variable1Transitioned10
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 11"
-- Name: Variable1Transitioned11
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 12"
-- Name: Variable1Transitioned12
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 13"
-- Name: Variable1Transitioned13
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 14"
-- Name: Variable1Transitioned14
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 15"
-- Name: Variable1Transitioned15
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 16"
-- Name: Variable1Transitioned16
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 17"
-- Name: Variable1Transitioned17
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 18"
-- Name: Variable1Transitioned18
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 19"
-- Name: Variable1Transitioned19
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 20"
-- Name: Variable1Transitioned20
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 21"
-- Name: Variable1Transitioned21
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 22"
-- Name: Variable1Transitioned22
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 23"
-- Name: Variable1Transitioned23
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 24"
-- Name: Variable1Transitioned1
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 25"
-- Name: Variable1Transitioned2
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 26"
-- Name: Variable1Transitioned3
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 27"
-- Name: Variable1Transitioned4
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 28"
-- Name: Variable1Transitioned5
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 29"
-- Name: Variable1Transitioned6
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 30"
-- Name: Variable1Transitioned7
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 31"
-- Name: Variable1Transitioned8
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 32"
-- Name: Variable1Transitioned9
-  Type: VariableTransitionEventDispatcher
-  Children:
-  - Name: Value
-    Type: BaseVariableType
-    DataType: Double
-    Value: 1.0
-  - Name: Transition
-    Type: BaseVariableType
-    DataType: VariableTransition
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Alarm 33"
-- Name: Alarm 34
+- Name: Alarm 1
   Type: BaseDataVariableType
   DataType: Int16
   Children:
@@ -670,6 +14,23 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Name: Alarm 2
+  Type: BaseDataVariableType
+  DataType: Int16
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].26"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phone Receiver
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "8055919565@vtext.com"
 - Name: Variable1Transitioned24
   Type: VariableTransitionEventDispatcher
   Children:
@@ -683,7 +44,7 @@ Children:
   - Name: VariableNodePath
     Type: BaseVariableType
     DataType: NodePath
-    Value: "../Alarm 34"
+    Value: "../Alarm 1"
   - Name: VariableTransitionEventHandler1
     Type: EventHandler
     Children:
@@ -736,7 +97,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../Alarms/DigitalAlarm34/Message"
+              Value: "../../../../../../../Alarms/DigitalAlarm33/Message"
           - Name: mailBody
             Type: BaseDataVariableType
             DataType: String
@@ -744,7 +105,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../Email Body"
+              Value: "../../../../../../Email Body Compressors"
     - Name: EventArguments
       Type: VariableTransitionEvent
       Children:
@@ -781,19 +142,14 @@ Children:
       - Name: Severity
         Type: PropertyType
         DataType: UInt16
-- Name: Alarm 35
+- Name: Email Body Ammonia System
   Type: BaseDataVariableType
-  DataType: Int16
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../CommDrivers/RAEtherNet_IPDriver1/IPStation1/Tags/Controller Tags/ALARM[0].26"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+  DataType: String
+  Value: "Check Ammonia System"
+- Name: Email Body Compressors
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Check Compressors"
 - Name: Variable1Transitioned25
   Type: VariableTransitionEventDispatcher
   Children:
@@ -807,7 +163,7 @@ Children:
   - Name: VariableNodePath
     Type: BaseVariableType
     DataType: NodePath
-    Value: "../Alarm 35"
+    Value: "../Alarm 2"
   - Name: VariableTransitionEventHandler1
     Type: EventHandler
     Children:
@@ -860,7 +216,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../Alarms/DigitalAlarm35/Message"
+              Value: "../../../../../../../Alarms/DigitalAlarm42/Message"
           - Name: mailBody
             Type: BaseDataVariableType
             DataType: String
@@ -868,7 +224,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../Email Body"
+              Value: "../../../../../../Email Body Compressors"
     - Name: EventArguments
       Type: VariableTransitionEvent
       Children:
@@ -905,3 +261,19 @@ Children:
       - Name: Severity
         Type: PropertyType
         DataType: UInt16
+- Name: 'Email Body E-Stops'
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Check E-Stops"
+- Name: Email Body Glycol System
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Check Glycol System"
+- Name: Email Body Pumps System
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Check Pumps System"
+- Name: Email Body Condenser System
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Check Condenser System"
